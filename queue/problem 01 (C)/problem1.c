@@ -7,7 +7,7 @@ int main()
 	int i;
 	q.head = 1;
 	q.tail = 1;
-	for (i = 1; i <=9; i++)   //×¢Òâ£¬´Ë´¦i´Ó1¿ªÊ¼µ½9
+	for (i = 1; i <=9; i++)   //æ³¨æ„ï¼Œæ­¤å¤„iä»1å¼€å§‹åˆ°9
 	{
 		scanf("%d", &q.data[q.tail]);
 		q.tail++;
