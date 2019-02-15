@@ -31,7 +31,7 @@ public:
                 break;
         }
         if(fast==nullptr||fast->next==nullptr)
-            return nullptr;
+            return NULL;
         else{
             slow=pHead;
             while(slow!=fast)
