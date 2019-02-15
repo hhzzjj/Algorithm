@@ -9,8 +9,29 @@
 */
 
 
+//方法一（尾插+反转）
+class Solution {
+public:
+    vector<int> printListFromTailToHead(ListNode* head) {
+        vector <int> a;
+        while(head)
+        {
+            a.push_back(head->val);
+            head=head->next;
+        }
+       reverse(a.begin(),a.end());
+        return a;
+    }
+};
 
 
+/*
+评价：这是最容易想到的方法，利用vecor，将链表元素添加进去，再反转，完成目标
+*/
+
+
+
+//方法二（直接头插）
 class Solution {
 public:
     vector<int> printListFromTailToHead(ListNode* head) {
@@ -27,5 +48,5 @@ public:
 
 
 /*
-评价：尽管所用代码极短，十分简洁，但因为使用了头插，所以实际效率并不算最优  运行时间：3ms，占用内存：476k。
+评价：同上，但是由于直接选择头插，所以无需翻转。但由于循环的每一步都使用了头插，所以实际效率并不算最优
 */
